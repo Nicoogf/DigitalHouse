@@ -1,26 +1,26 @@
 import React, { useState } from 'react' ;
-import SharedNotesContext from './SharedNotesContext';
+import NotasCompartidasContexto from './SharedNotesContext';
 import DeskOne from './DeskOne';
 import DeskTwo from './DeskTwo';
 
 const Office = () => {
-  const [ sharedNotes , setSharedNotes] = useState([]) ;
-  
-  const addNotes = ( note ) =>{
-    setSharedNotes([...sharedNotes , note ])
+
+  const [ listaDeTareas , setListaDeTareas ] = useState( [] ) ;
+
+  const FuncionDeAgregarTareas = ( tareaRecibida ) =>{
+    setListaDeTareas( [...listaDeTareas , tareaRecibida])
   }
+  
+  
 
   return (
-    <SharedNotesContext.Provider value={ { sharedNotes , addNotes } }>
-    <div>
-       <div className='office'>
-          <h1>Oficina Compartida</h1>
-          {/* Escritorio*/}
-          <DeskOne />
-          <DeskTwo />
-       </div>
+    <NotasCompartidasContexto.Provider value={ {listaDeTareas , FuncionDeAgregarTareas}  }>
+    <div className='oficina'>
+     <h1>Lista de Tareas</h1>
+      <DeskOne />
+      <DeskTwo /> 
     </div>
-    </SharedNotesContext.Provider>
+   </NotasCompartidasContexto.Provider>
   ) ;
 } ;
 

@@ -1,14 +1,17 @@
 import React, { useContext } from 'react' ;
-import SharedNotesContext from './SharedNotesContext' ;
+import NotasCompartidasContexto from './SharedNotesContext';
+
  
 const DeskTwo = () => {
+ const {FuncionDeAgregarTareas} = useContext( NotasCompartidasContexto )
 
- const { addNotes } = useContext(SharedNotesContext);
 
   return (
-    <div className='desk'>
+    <div>
         <h2>Escritorio Dos</h2>
-        <button onClick={ () => addNotes("Esta es una nota muy importante")}> Agregar Nota</button>
+
+        <button onClick={ ()=> FuncionDeAgregarTareas( "Tarea Nueva ")}> Agregar </button>
+        
     </div>
   ) ;
 } ;

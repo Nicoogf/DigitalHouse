@@ -1,17 +1,22 @@
 import React, { useContext } from 'react'
-import SharedNotesContext from './SharedNotesContext';
+import NotasCompartidasContexto from './SharedNotesContext';
 
 const DeskOne = () => {
 
-const { sharedNotes } = useContext ( SharedNotesContext )
+  const { listaDeTareas } = useContext(NotasCompartidasContexto)
+
   return (
     <div className='desk'>
-     <h2> Escritorio Uno</h2>
-     <ul>
-         { sharedNotes.map(( note , index) =>(
-            <li key={ index }> { note } </li>
-         ))}       
-     </ul>
+        <h2>Escritorio uno</h2>
+
+        <ul>
+        {listaDeTareas.map( (tarea , index) =>{
+            return(
+                <li key={ index }> { tarea } </li>
+            )})} 
+
+        </ul>
+     
     </div>
   ) ;
 } ;

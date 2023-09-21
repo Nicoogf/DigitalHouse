@@ -1,6 +1,5 @@
-import React , { createContext }from 'react' ;
+import  { createContext } from 'react' ;
 
-const SharedNotesContext = createContext(); 
- 
+const NotasCompartidasContexto = createContext() ;
 
-export default SharedNotesContext ;
+export default NotasCompartidasContexto ;
