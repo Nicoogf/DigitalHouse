@@ -8,6 +8,7 @@ import ContadorState from './clases/clase01/useState/ContadorState';
 import Office from './clases/clase01/useContext/Office';
 import ContadorConReducer from './clases/clase01/useReducer/Contador';
 import MeasureElement from './clases/clase01/useLayoutEffect/MeasureElement';
+import UseMemoComponent from './clases/clase01/useMemo/useMemoComponent';
 
 //useReducer () ;
 
@@ -38,8 +39,17 @@ function App() {
        {/* useReducer () */}
        <ContadorConReducer />
 
+      <hr />
+      <hr />
+
        {/* useLayout () */}
        <MeasureElement />
+
+      <hr />
+      <hr />
+
+       {/* useLayout () */}
+       <UseMemoComponent />
 
       <hr />
       <hr />
