@@ -1,22 +1,21 @@
-import React, { useContext } from 'react'
-import NotasCompartidasContexto from './SharedNotesContext';
+import React, { useContext } from 'react' ;
+import elContextoGlobalDeLaAplicacion from './SharedNotesContext';
+
 
 const DeskOne = () => {
 
-  const { listaDeTareas } = useContext(NotasCompartidasContexto)
+  const { objetoDeNotasCompartidas , funcionParaAgregarNota} = useContext( elContextoGlobalDeLaAplicacion )
 
   return (
-    <div className='desk'>
-        <h2>Escritorio uno</h2>
-
-        <ul>
-        {listaDeTareas.map( (tarea , index) =>{
+    <div className='escritorio'>
+      <h2>Escritorio 1</h2>
+      <ul>
+         { objetoDeNotasCompartidas.map (( notaRecibida , identificador ) =>{
             return(
-                <li key={ index }> { tarea } </li>
-            )})} 
-
-        </ul>
-     
+              <li key = { identificador } >  { notaRecibida } </li>
+            )
+         })}
+      </ul>
     </div>
   ) ;
 } ;

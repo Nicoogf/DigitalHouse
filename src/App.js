@@ -1,8 +1,15 @@
 import './App.css';
-import ClaseUno from './clases/clase01/claseUno';
-import ClaseUnouseEffect from './clases/clase01/claseUnouseEffect';
+
+
+// useState () ;
+import ContadorState from './clases/clase01/useState/ContadorState';
+
+// useContext () ;
 import Office from './clases/clase01/useContext/Office';
-import InputWithFocus from './clases/clase01/useRef/InputWhitFocus';
+
+
+
+
 
 function App() {
 
@@ -10,10 +17,16 @@ function App() {
 
   return (
     <div className="App">
-      { /* <ClaseUno valorInicial={8} /> */ }
-      { /* <ClaseUnouseEffect /> */ } 
-      { /*<Office /> */ }
-      <InputWithFocus />
+
+      {/* UseState () */}
+      <ContadorState />
+
+      <hr />
+      <hr />
+
+      {/* UseContext () */}
+      <Office />
+  
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import  { createContext } from 'react' ;
+import { createContext } from "react" ;
 
-const NotasCompartidasContexto = createContext() ;
+const elContextoGlobalDeLaAplicacion = createContext() ;
 
-export default NotasCompartidasContexto ;
+export default elContextoGlobalDeLaAplicacion ;
