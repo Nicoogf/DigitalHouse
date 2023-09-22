@@ -9,7 +9,7 @@ const DeskTwo = () => {
   return (
     <div>
      <h2> Escritorio 2 </h2>
-     <button onClick={ ()=> funcionParaAgregarNota( "Tarea de testeo agregada")}> Agregar Tarrea</button>
+     <button onClick={ ()=> funcionParaAgregarNota( "Tarea de testeo agregada" )}> Agregar Tarrea</button>
     </div>
   ) ;
 } ;

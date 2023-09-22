@@ -4,7 +4,7 @@ import elContextoGlobalDeLaAplicacion from './SharedNotesContext';
 
 const DeskOne = () => {
 
-  const { objetoDeNotasCompartidas , funcionParaAgregarNota} = useContext( elContextoGlobalDeLaAplicacion )
+  const { objetoDeNotasCompartidas } = useContext( elContextoGlobalDeLaAplicacion )
 
   return (
     <div className='escritorio'>

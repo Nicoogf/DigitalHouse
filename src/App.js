@@ -6,6 +6,11 @@ import ContadorState from './clases/clase01/useState/ContadorState';
 
 // useContext () ;
 import Office from './clases/clase01/useContext/Office';
+import ContadorConReducer from './clases/clase01/useReducer/Contador';
+import MeasureElement from './clases/clase01/useLayoutEffect/MeasureElement';
+
+//useReducer () ;
+
 
 
 
@@ -26,6 +31,22 @@ function App() {
 
       {/* UseContext () */}
       <Office />
+
+      <hr />
+      <hr />
+
+       {/* useReducer () */}
+       <ContadorConReducer />
+
+       {/* useLayout () */}
+       <MeasureElement />
+
+      <hr />
+      <hr />
+
+
+
+
   
     </div>
   );
