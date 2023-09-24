@@ -5,6 +5,7 @@
  *  
  */
 
+
 let userName = "Nicolas" ;
 
 /**
@@ -28,6 +29,7 @@ const miArray = [ 1 , 2, 3, 4, 5 ] ;
  */
 
 const segundoArray = [ false, 1 , "hola" , 23]
+
 
 
 
@@ -76,4 +78,46 @@ const TercerUsuario = {
     SegundoNombre :"Gabriel",
     Edad: 27 ,
     isActive : true 
+}
+
+
+/**
+ * Imprima por consola un saludo para el usuario
+ * @param { User } user
+ * @returns { void }
+ * @example 
+ *  Saludar ( )
+ */
+
+function Saludar ( user ) {
+    console.log(`Buenos dias : ${ user.nombre}`)
+}
+
+
+/**
+ * @function
+ * @param { Array<Number>}  numbers El array de numeros a filtrar
+ * @returns  { number[] } retorna un array con los numeros pares 
+ * 
+ */
+
+function filterEvenNumber ( numbers ){
+    return numbers.filter( number => number  %  2 === 0) ;
+}
+
+
+/**
+ * @async
+ * @function
+ * @param { string } url La URL del servidor remoto
+ * @returns { Promise <Object>} Los datos obtenidos del servidor
+ * @throws { Error } si la solicitud al servidor falla  
+ */
+
+async function fetchData ( url ) {
+    const response  =  await fetch( url );
+    if( !response.ok ){
+        throw new Error("Fallo al obtener los datos del servidor")
+    }
+    return response.json();
 }

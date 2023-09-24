@@ -10,6 +10,7 @@ import ContadorConReducer from './clases/clase01/useReducer/Contador';
 import MeasureElement from './clases/clase01/useLayoutEffect/MeasureElement';
 import UseMemoComponent from './clases/clase01/useMemo/useMemoComponent';
 import UseCallbackComponent from './clases/clase01/useCallback/useCallbackComponent';
+import PropsTypesComponent from './clases/clase01/PropsTypes/PropsTypes';
 
 //useReducer () ;
 
@@ -58,6 +59,12 @@ function App() {
        {/* useLayout () */}
        <UseCallbackComponent />
 
+      <hr />
+      <hr />
+
+       {/* PropsTypes */}
+
+       <PropsTypesComponent texto="Hola Mundo" />
      
 
 
