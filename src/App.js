@@ -11,6 +11,7 @@ import MeasureElement from './clases/clase01/useLayoutEffect/MeasureElement';
 import UseMemoComponent from './clases/clase01/useMemo/useMemoComponent';
 import UseCallbackComponent from './clases/clase01/useCallback/useCallbackComponent';
 import PropsTypesComponent from './clases/clase01/PropsTypes/PropsTypes';
+import MainComponent from './clases/clase01/clase04/main';
 
 //useReducer () ;
 
@@ -25,48 +26,50 @@ function App() {
 
   return (
     <div className="App">
-
-      {/* UseState () */}
+    {/* 
+       UseState () 
       <ContadorState />
 
       <hr />
       <hr />
 
-      {/* UseContext () */}
+      UseContext 
       <Office />
 
       <hr />
       <hr />
 
-       {/* useReducer () */}
+       {useReducer () 
        <ContadorConReducer />
 
       <hr />
       <hr />
 
-       {/* useLayout () */}
+       useLayout () 
        <MeasureElement />
 
       <hr />
       <hr />
 
-       {/* useLayout () */}
+        useLayout ()
        <UseMemoComponent />
 
       <hr />
       <hr />
 
-       {/* useLayout () */}
+        useLayout 
        <UseCallbackComponent />
 
       <hr />
       <hr />
 
-       {/* PropsTypes */}
+        PropsTypes 
 
        <PropsTypesComponent texto="Hola Mundo" />
      
+      */}
 
+     <MainComponent children={}> </MainComponent>
 
 
 
